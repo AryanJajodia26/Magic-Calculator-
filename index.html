@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
+    <button class="instruction-btn" id="instructionBtn">?</button>
+
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="display">
+                <div class="previous-operand"></div>
+                <div class="current-operand">0</div>
+            </div>
+            <div class="buttons">
+                <button class="operator" data-action="clear">AC</button>
+                <button class="operator" data-action="delete">DEL</button>
+                <button class="operator" data-action="percent">%</button>
+                <button class="operator" data-action="divide">÷</button>
+                
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operator" data-action="multiply">×</button>
+                
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator" data-action="subtract">-</button>
+                
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operator" data-action="add">+</button>
+                
+                <button class="number">0</button>
+                <button class="number">00</button>
+                <button class="number">.</button>
+                <button class="operator" data-action="equals">=</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="signature">
+        <span class="name">By - Aryan Jajodia</span>
+        <span class="institution">IIT Patna</span>
+    </div>
+
+    
+    <div class="popup" id="magicPopup">
+        <div class="popup-content">
+            <h2>Magic Mode Activated! 🎩✨</h2>
+            <div class="input-group">
+                <label for="result">What final result do you want to display?</label>
+                <input type="number" id="result" value="42">
+            </div>
+            <button id="startMagic">Start Magic!</button>
+        </div>
+    </div>
+
+    <!-- Instructions Popup -->
+    <div class="popup" id="instructionPopup">
+        <div class="popup-content">
+            <h2>Calculator Instructions 📝</h2>
+            <div class="instructions">
+                <h3>Basic Operations</h3>
+                <ul>
+                    <li>Use number buttons (0-9) to input numbers</li>
+                    <li>Use operators (+, -, ×, ÷) for calculations</li>
+                    <li>Press '=' or Enter to see the result</li>
+                    <li>AC clears everything, DEL removes last digit</li>
+                </ul>
+                
+                <h3>Keyboard Shortcuts</h3>
+                <ul>
+                    <li>Numbers: 0-9 keys</li>
+                    <li>Operators: +, -, *, /</li>
+                    <li>Equals: Enter key</li>
+                    <li>Clear: Escape key</li>
+                    <li>Delete: Backspace key</li>
+                </ul>
+
+                <h3>Magic Trick Mode 🎩✨</h3>
+                <ul>
+                    <li>Press '%' button 5 times quickly</li>
+                    <li>Enter your desired final result</li>
+                    <li>Perform calculations normally</li>
+                    <li>Press '=' to reveal the magic result!</li>
+                </ul>
+            </div>
+            <button id="closeInstructions">Got it!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
