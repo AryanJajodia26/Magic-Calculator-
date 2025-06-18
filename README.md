@@ -2,8 +2,9 @@
 
 A beautiful calculator with a hidden magic trick mode! This calculator works perfectly as a normal calculator but has a special hidden feature that can be activated to perform a magic trick.
 
-## Features
+🔗 Live Demo link: magicalculator.netlify.app
 
+## Features
 ### Normal Calculator Mode
 - Basic arithmetic operations (+, -, ×, ÷)
 - Percentage calculations
@@ -38,14 +39,6 @@ To activate the magic trick:
 - Uses CSS for modern glass/neumorphism design
 - Includes confetti animation for the magic reveal
 - No external dependencies except for the confetti library
-
-## Browser Support
-
-Works on all modern browsers that support:
-- CSS Grid
-- CSS Flexbox
-- CSS Variables
-- ES6+ JavaScript features
 
 ## License
 
